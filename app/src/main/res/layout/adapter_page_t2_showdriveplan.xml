@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/shape_linearlayout_divider_a"
+            android:orientation="vertical"
+            android:showDividers="middle|beginning|end">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/shape_linearlayout_divider_a"
+                android:orientation="horizontal"
+                android:showDividers="middle"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tv_dateday_actshowdriveplan"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/bgimg_gradual_white75_horizontal_mid"
+                    android:gravity="center"
+                    android:hint="點此選擇起始日期"
+                    android:textColor="@color/colorModeDarkTitle"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_dateday_end_actshowdriveplan"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/bgimg_gradual_white75_horizontal_mid"
+                    android:gravity="center"
+                    android:hint="點此選擇結束日期"
+                    android:textColor="@color/colorModeDarkTitle"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spin_cont_event_actshowdriveplan"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="8"
+                android:background="@drawable/bgimg_gradual_white75_horizontal_mid"
+                android:gravity="center|center_horizontal" />
+
+            <Spinner
+                android:id="@+id/spin_cont_area_actshowdriveplan"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="8"
+                android:background="@drawable/bgimg_gradual_white75_horizontal_mid"
+                android:gravity="center|center_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/shape_linearlayout_divider_a"
+            android:orientation="horizontal"
+            android:showDividers="middle|beginning|end"
+            android:weightSum="22">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:background="@drawable/bgimg_gradual_white75_horizontal_mid"
+                android:divider="@drawable/shape_linearlayout_divider_a"
+                android:orientation="vertical"
+                android:showDividers="middle|beginning|end">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/colorMainActivityButtonBgcolor"
+                    android:gravity="center|center_horizontal"
+                    android:text="@string/m_carandmembers_name"
+                    android:textColor="@color/colorModeDarkTitle"
+                    android:textIsSelectable="false"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spin_cont_car_actshowdriveplan"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2" />
+
+                <Spinner
+                    android:id="@+id/spin_cont_conductor_actshowdriveplan"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2" />
+
+                <Spinner
+                    android:id="@+id/spin_cont_driver_actshowdriveplan"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="12"
+                android:background="@drawable/bgimg_gradual_white75_horizontal_mid"
+                android:divider="@drawable/shape_linearlayout_divider_a"
+                android:orientation="vertical"
+                android:showDividers="middle|beginning|end">
+
+                <TextView
+                    android:id="@+id/tv_title_daywork_actshowdriveplan"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/colorMainActivityButtonBgcolor"
+                    android:gravity="center|center_horizontal"
+                    android:text="@string/m_daywork_name"
+                    android:textColor="@color/colorModeDarkTitle"
+                    android:textIsSelectable="false"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spin_cont_daywork_actshowdriveplan_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2" />
+
+                <Spinner
+                    android:id="@+id/spin_cont_daywork_actshowdriveplan_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="2" />
+
+                <Spinner
+                    android:id="@+id/spin_cont_daywork_actshowdriveplan_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="2" />
+
+                <Spinner
+                    android:id="@+id/spin_cont_daywork_actshowdriveplan_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="2" />
+
+                <Spinner
+                    android:id="@+id/spin_cont_daywork_actshowdriveplan_e"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="@drawable/shape_linearlayout_divider_a"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:weightSum="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="90"
+            android:background="@color/colorMainActivityButtonBgcolor"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <Button
+                android:id="@+id/bt_sent_actshowdriveplan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="2"
+                android:background="@drawable/shape_border_b"
+                android:text="暫存"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bt_clear_actshowdriveplan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="2"
+                android:background="@drawable/shape_border_b"
+                android:text="清除"
+                android:textColor="@color/colorModeDarkTitle"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bt_fast_actshowdriveplan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/shape_border_b"
+                android:text="快速"
+                android:textColor="@color/colorModeDarkTitle"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bt_addition_actshowdriveplan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="2"
+                android:background="@drawable/shape_border_b"
+                android:text="合成"
+                android:textColor="@color/colorModeDarkTitle"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:divider="@drawable/shape_linearlayout_divider_a"
+            android:orientation="horizontal"
+            android:showDividers="middle|beginning|end"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/bgimg_gradual_white75_vertical_mid"
+                android:divider="@drawable/shape_linearlayout_divider_a"
+                android:orientation="vertical"
+                android:showDividers="middle"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_result_actshowdriveplan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textIsSelectable="true"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_tommorrow_actshowdriveplan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/colorModeDarkTitle"
+                    android:textIsSelectable="true"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/tv_addition_actshowdriveplan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/bgimg_gradual_white75_vertical_mid"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="false"
+                android:textColor="@color/colorModeDarkTitle"
+                android:textIsSelectable="true"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

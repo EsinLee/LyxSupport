@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabl_main_actworkresourcesmanagement"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bgimg_gradual_white75_vertical_flip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabIndicator="@drawable/bgimg_gradual_white75_vertical_mid"
+        app:tabIndicatorColor="#FFFFFF"
+        app:tabIndicatorGravity="stretch"
+        app:tabRippleColor="@color/colorMdmButtonBgcolor">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:forceDarkAllowed="false"
+            android:icon="@mipmap/btn_user_icon"
+            android:scaleType="centerCrop"
+            android:text="@string/page_workresourcesmanagement_title_button_a_zh" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@mipmap/btn_car_icon"
+            android:scaleType="centerCrop"
+            android:scrollbarSize="4dp"
+            android:text="@string/page_workresourcesmanagement_title_button_b_zh" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@mipmap/btn_feature_icon"
+            android:scaleType="centerCrop"
+            android:text="@string/page_workresourcesmanagement_title_button_c_zh" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@mipmap/btn_setting_icon"
+            android:scaleType="centerCrop"
+            android:text="@string/page_workresourcesmanagement_title_button_d_zh" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp_main_actworkresourcesmanagement"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabl_main_actworkresourcesmanagement" />
+</androidx.constraintlayout.widget.ConstraintLayout>

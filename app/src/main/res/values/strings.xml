@@ -1,0 +1,188 @@
+<resources>
+    <string name="app_name_en">LyxSupport</string>
+    <string name="app_name_zh">輔助工具</string>
+    <string name="app_developer">\@xin</string>
+    <string name="app_developer_zh">\@興</string>
+    <string name="app_update_version">v1.0.3</string>
+
+    //================================================================================
+    <string name="page_feature_title_zh">工具</string>
+    <string name="page_home_title_zh">首頁</string>
+    <string name="page_forwork_title_zh">工作</string>
+    <string name="page_setting_title_zh">設定</string>
+
+    <string name="page_feature_title_en">Feature</string>
+    <string name="page_home_title_en">Home</string>
+    <string name="page_forwork_title_en">Work</string>
+    <string name="page_setting_title_en">Setting</string>
+    //================================================================================
+    <string name="btn_title_done_zh">送出</string>
+    <string name="btn_title_done_en">Submit</string>
+    //================================================================================
+    <string name="page_feature_title_button_a_zh">備忘錄</string>
+    <string name="page_feature_title_button_b_zh">文字輸出</string>
+    <string name="page_feature_title_button_c_zh">帳冊</string>
+    <string name="page_feature_title_button_d_zh">資源管理</string>
+    <string name="page_feature_title_button_e_zh">資料庫</string>
+
+    <string name="page_feature_title_button_a_en">Memo</string>
+    <string name="page_feature_title_button_b_en">Text Editor</string>
+    <string name="page_feature_title_button_c_en">Account book</string>
+    <string name="page_feature_title_button_d_en">Resources Management</string>
+    <string name="page_feature_title_button_e_en">Database</string>
+    //================================================================================
+    <string name="page_forwork_title_button_a_zh">行事曆</string>
+    <string name="page_forwork_title_button_b_zh">預派輸出</string>
+    <string name="page_forwork_title_button_c_zh">預劃輸出</string>
+    <string name="page_forwork_title_button_d_zh">資源管理</string>
+    <string name="page_forwork_title_button_e_zh">工作預劃</string>
+
+    <string name="page_forwork_title_button_a_en">Memo</string>
+    <string name="page_forwork_title_button_b_en">DrivePlan</string>
+    <string name="page_forwork_title_button_c_en">Resources</string>
+    <string name="page_forwork_title_button_d_en">WorkPlan</string>
+    //================================================================================
+    <string name="page_workresourcesmanagement_title_button_a_zh">人員</string>
+    <string name="page_workresourcesmanagement_title_button_b_zh">派車</string>
+    <string name="page_workresourcesmanagement_title_button_c_zh">物品</string>
+    <string name="page_workresourcesmanagement_title_button_d_zh">字典</string>
+
+    <string name="page_workresourcesmanagement_title_button_a_en">Menbers</string>
+    <string name="page_workresourcesmanagement_title_button_b_en">DrivePlan</string>
+    <string name="page_workresourcesmanagement_title_button_c_en">Item</string>
+    <string name="page_workresourcesmanagement_title_button_d_en">dictionary</string>
+    //================================================================================
+    <string name="page_feature_database_colum_title_button_a_zh">姓名</string>
+    <string name="page_feature_database_colum_title_button_b_zh">電話</string>
+    <string name="page_feature_database_colum_title_button_c_zh">階級</string>
+    <string name="page_feature_database_colum_title_button_d_zh">職務</string>
+    <string name="page_feature_database_colum_title_button_e_zh">關聯</string>
+    <string name="page_feature_database_colum_title_button_f_zh">標籤</string>
+    <string name="page_feature_database_colum_title_button_g_zh">其他</string>
+
+    <string name="page_feature_database_colum_title_button_a_en">Name</string>
+    <string name="page_feature_database_colum_title_button_b_en">Phone</string>
+    <string name="page_feature_database_colum_title_button_c_en">Rank</string>
+    <string name="page_feature_database_colum_title_button_d_en">Job</string>
+    <string name="page_feature_database_colum_title_button_e_en">tags</string>
+    <string name="page_feature_database_colum_title_button_f_en">Relation</string>
+    <string name="page_feature_database_colum_title_button_g_en">Else</string>
+    //================================================================================
+    <string name="page_forwork_databaseitem_colum_title_button_a_zh">品名</string>
+    <string name="page_forwork_databaseitem_colum_title_button_b_zh">編號</string>
+    <string name="page_forwork_databaseitem_colum_title_button_c_zh">類型</string>
+    <string name="page_forwork_databaseitem_colum_title_button_d_zh">數量</string>
+    <string name="page_forwork_databaseitem_colum_title_button_e_zh">增減</string>
+    <string name="page_forwork_databaseitem_colum_title_button_f_zh">儲位</string>
+    <string name="page_forwork_databaseitem_colum_title_button_g_zh">來源</string>
+    <string name="page_forwork_databaseitem_colum_title_button_h_zh">其他</string>
+
+    <string name="page_forwork_databaseitem_colum_title_button_a_en">Name</string>
+    <string name="page_forwork_databaseitem_colum_title_button_b_en">Itemid</string>
+    <string name="page_forwork_databaseitem_colum_title_button_c_en">Type</string>
+    <string name="page_forwork_databaseitem_colum_title_button_d_en">Quantity</string>
+    <string name="page_forwork_databaseitem_colum_title_button_e_en">Indrcrease</string>
+    <string name="page_forwork_databaseitem_colum_title_button_f_en">StoragePlace</string>
+    <string name="page_forwork_databaseitem_colum_title_button_g_en">Source</string>
+    <string name="page_forwork_databaseitem_colum_title_button_h_en">elseinfo</string>
+    //================================================================================
+    <string name="page_forwork_databasedriverplan_colum_title_button_a_zh">日期</string>
+    <string name="page_forwork_databasedriverplan_colum_title_button_b_zh">任務</string>
+    <string name="page_forwork_databasedriverplan_colum_title_button_c_zh">地區</string>
+    <string name="page_forwork_databasedriverplan_colum_title_button_d_zh">車長</string>
+    <string name="page_forwork_databasedriverplan_colum_title_button_e_zh">駕駛</string>
+    <string name="page_forwork_databasedriverplan_colum_title_button_f_zh">車號</string>
+    //================================================================================
+    <string name="page_forwork_databasedictionary_colum_title_button_a_zh">詞彙</string>
+    <string name="page_forwork_databasedictionary_colum_title_button_b_zh">解釋</string>
+    <string name="page_forwork_databasedictionary_colum_title_button_c_zh">標籤</string>
+    <string name="page_forwork_databasedictionary_colum_title_button_d_zh">其他</string>
+    //================================================================================//
+    <string name="page_setting_button_a_zh">背景色</string>
+    <string name="page_setting_button_a_dialog_color_rad_zh">紅</string>
+    <string name="page_setting_button_a_dialog_color_rad_en">red</string>
+    <string name="page_setting_button_a_dialog_color_green_zh">綠</string>
+    <string name="page_setting_button_a_dialog_color_green_en">green</string>
+    <string name="page_setting_button_a_dialog_color_blue_zh">藍</string>
+    <string name="page_setting_button_a_dialog_color_blue_en">blue</string>
+    <string name="page_setting_button_b_zh">關於</string>
+    <string name="page_setting_button_c_zh">標籤</string>
+    <string name="page_setting_button_d_zh">其他</string>
+    //================================================================================
+    <string name="m_event_name">任務</string>
+    <string-array name="m_event_array">
+        <item>徑路巡查併緊急搶修用車</item>
+        <item>緊急搶修用車</item>
+        <item>徑路巡查</item>
+    </string-array>
+    //================================================================================
+    <string name="m_area_name">地區</string>
+    <string-array name="m_area_array">
+        <item>蘇花公路-東澳、北部地區</item>
+        <item>宜蘭市區-礁溪、北部地區</item>
+        <item>蘇澳-蘇花公路、北部地區</item>
+        <item>貢寮、北部地區</item>
+        <item>宜蘭市區</item>
+        <item>北部地區</item>
+    </string-array>
+    //================================================================================
+    <string name="m_meetingplace_name">會議地點</string>
+    <string-array name="m_meetingplace_array">
+        <item>頭城工務段-宜蘭縣頭城鎮青雲路1段128號</item>
+        <item>南澳工務段-宜蘭縣南澳鄉南澳村蘇花路2段413號</item>
+        <item>宜蘭市公所-宜蘭縣宜蘭市中山路二段432號</item>
+    </string-array>
+    //================================================================================
+    <string name="m_carandmembers_name">車號 - 車長 - 駕駛</string>
+    <string name="m_conductor_name">車長</string>
+    <string-array name="m_conductor_array">
+        <item>士官長李欽銘 0917812805</item>
+        <item>上士丘家豪 0982958276</item>
+    </string-array>
+    //================================================================================
+    <string name="m_driver_name">駕駛</string>
+    <string-array name="m_driver_array">
+        <item>下士 賴新元</item>
+        <item>下士 林駿安</item>
+        <item>下士 楊仁杰</item>
+        <item>士官長 李欽銘</item>
+    </string-array>
+    //================================================================================
+    <string name="m_car_name">車輛</string>
+    <string-array name="m_car_array">
+        <item>軍K-20533</item>
+        <item>軍K-20547</item>
+        <item>軍K-20581</item>
+        <item>軍D-10122</item>
+    </string-array>
+    //================================================================================
+    <string name="m_daywork_name">今日線巡</string>
+    <string-array name="m_daywork_array">
+        <item>無</item>
+        <item>蘇花公路-東澳(全)</item>
+        <item>蘇花公路-東澳(O169-A152)</item>
+        <item>蘇花公路-東澳(O169-T168)</item>
+        <item>宜蘭市區-礁溪(T114-S143)</item>
+        <item>宜蘭市區(T114-財務組-宜蘭憲兵隊-S146)</item>
+        <item>蘇澳-蘇花公路(F150-T151-S158-S155)</item>
+        <item>貢寮(O164-T166)</item>
+    </string-array>
+    //================================================================================
+    <string-array name="m_daywork_simple_array">
+        <item>無</item>
+        <item>東澳(全)</item>
+        <item>東澳(A152)</item>
+        <item>東澳(T168)</item>
+        <item>礁溪</item>
+        <item>宜蘭市區</item>
+        <item>蘇澳</item>
+        <item>貢寮</item>
+    </string-array>
+    //================================================================================
+    <string name="m_date_name">日期</string>
+    //================================================================================
+
+    <string name="channel_name">LyxSupport</string>
+    <string name="channel_description">supapp</string>
+
+</resources>

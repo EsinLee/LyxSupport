@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:weightSum="31">
+
+        <TextView
+            android:id="@+id/tv_database_adapteritem_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:background="@drawable/shape_border_d"
+            android:gravity="fill_horizontal|left"
+            android:text="王小明"
+            android:textColor="@color/colorModeDarkTitle"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/tv_database_adapteritem_property_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="16"
+            android:background="@drawable/shape_border_c"
+            android:gravity="fill_horizontal|left"
+            android:text="一兵"
+            android:textColor="@color/colorModeDarkTitle"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="30">
+
+        <TextView
+            android:id="@+id/tv_database_adapteritem_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="29"
+            android:background="@drawable/shape_border_d"
+            android:gravity="center"
+            android:textColor="@color/colorModeDarkTitle"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_database_adapteritem_property_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/shape_border_c"
+                    android:gravity="fill_horizontal|left"
+                    android:text="0912-345-789"
+                    android:textColor="@color/colorModeDarkTitle"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_database_adapteritem_property_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/shape_border_c"
+                    android:gravity="fill_horizontal|left"
+                    android:text="打草兵"
+                    android:textColor="@color/colorModeDarkTitle"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_database_adapteritem_property_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/shape_border_c"
+                android:gravity="fill_horizontal|left"
+                android:text="0912-345-789"
+                android:textColor="@color/colorModeDarkTitle"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_database_adapteritem_property_e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/shape_border_c"
+                android:gravity="fill_horizontal|left"
+                android:text="打草兵"
+                android:textColor="@color/colorModeDarkTitle"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

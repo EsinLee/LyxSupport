@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimg_gradual_white75_vertical"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bgimg_gradual_white75_vertical_mid"
+        android:orientation="horizontal"
+        android:weightSum="15">
+
+        <ImageView
+            android:id="@+id/iv_fold_actdatabasedictionary_a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="7"
+            android:alpha="50"
+            android:cropToPadding="true"
+            android:padding="9dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/ic_arrow_down" />
+
+        <Button
+            android:id="@+id/bt_fold_actdatabasedictionary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_border_c"
+            android:text="資  料  登  載"
+            android:textColor="@color/colorModeDarkTitle"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_fold_actdatabasedictionary_b"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="7"
+            android:alpha="50"
+            android:cropToPadding="true"
+            android:padding="9dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/ic_arrow_down" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_main_actdispatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_input_actdispatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="5"
+                    android:orientation="horizontal"
+                    android:weightSum="25">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="22"
+                        android:gravity="center|top"
+                        android:text="@string/page_forwork_databasedictionary_colum_title_button_a_zh"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorModeDarkTitle"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtv_word_actdatabasedictionary"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/shape_border_d"
+                        android:gravity="top"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:singleLine="false"
+                        android:textColor="@color/colorModeDarkTitle"
+                        android:textIsSelectable="true"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="5"
+                    android:orientation="horizontal"
+                    android:weightSum="25">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="22"
+                        android:gravity="center|top"
+                        android:text="@string/page_forwork_databasedictionary_colum_title_button_b_zh"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorModeDarkTitle"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtv_annotation_actdatabasedictionary"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/shape_border_d"
+                        android:gravity="top"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:singleLine="false"
+                        android:textColor="@color/colorModeDarkTitle"
+                        android:textIsSelectable="true"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="5"
+                    android:orientation="horizontal"
+                    android:weightSum="25">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="22"
+                        android:gravity="center"
+                        android:text="@string/page_forwork_databasedictionary_colum_title_button_c_zh"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorModeDarkTitle"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtv_tags_actdatabasedictionary"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/shape_border_d"
+                        android:inputType="textPersonName" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="5"
+                    android:orientation="horizontal"
+                    android:weightSum="25">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="22"
+                        android:gravity="center|top"
+                        android:text="@string/page_forwork_databasedictionary_colum_title_button_d_zh"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorModeDarkTitle"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtv_elseinfo_actdatabasedictionary"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/shape_border_d"
+                        android:gravity="top"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:singleLine="false"
+                        android:textColor="@color/colorModeDarkTitle"
+                        android:textIsSelectable="true"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_modify_actdatabasedictionary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_border_b"
+                android:text="修改"
+                android:textColor="@color/colorModeDarkTitle"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bt_clear_actdatabasedictionary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_border_b"
+                android:text="清空顯示"
+                android:textColor="@color/colorModeDarkTitle"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bt_create_actdatabasedictionary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_border_b"
+                android:text="新增"
+                android:textColor="@color/colorModeDarkTitle"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcy_main_actdatabasedictionary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>

@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:showDividers="middle|beginning|end">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_border_c"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_nightwork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bgimg_gradual_white75_vertical_mid"
+                        android:orientation="horizontal"
+                        android:weightSum="15">
+
+                        <ImageView
+                            android:id="@+id/iv_nightwork_actshowworkplan_a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="7"
+                            android:alpha="50"
+                            android:cropToPadding="true"
+                            android:padding="9dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@mipmap/ic_arrow_down" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="12">
+
+                            <CheckBox
+                                android:id="@+id/chb_nightwork_actshowworkplan"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="11"
+                                android:gravity="center" />
+
+                            <Button
+                                android:id="@+id/bt_nightwork_actshowworkplan"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_border_c"
+                                android:gravity="left|center_vertical"
+                                android:text="夜間派遣"
+                                android:textColor="@color/colorModeDarkTitle"
+                                android:textSize="20sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/textView11"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_nightwork_actshowworkplan_b"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="7"
+                            android:alpha="50"
+                            android:cropToPadding="true"
+                            android:padding="9dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@mipmap/ic_arrow_down" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_nightwork_actshowworkplan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/shape_border_d"
+                        android:divider="@drawable/shape_linearlayout_divider_a"
+                        android:orientation="vertical"
+                        android:showDividers="middle|beginning|end"
+                        android:weightSum="5">
+
+                        <TextView
+                            android:id="@+id/tv_dateday_nightwork_actshowworkplan"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/bgimg_gradual_white75_horizontal_mid"
+                            android:gravity="center"
+                            android:hint="點此選擇日期"
+                            android:textColor="@color/colorModeDarkTitle"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:divider="@drawable/shape_linearlayout_divider_a"
+                            android:orientation="horizontal"
+                            android:showDividers="middle">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="地點"
+                                android:textColor="@color/colorModeDarkTitle"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/edtv_nightwork_place_actshowworkplan"
+                                android:layout_width="match_parent"
+                                android:layout_height="43dp"
+                                android:layout_weight="2"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:divider="@drawable/shape_linearlayout_divider_a"
+                            android:orientation="horizontal"
+                            android:showDividers="middle">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="施工內容"
+                                android:textColor="@color/colorModeDarkTitle"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/edtv_nightwork_construction_actshowworkplan"
+                                android:layout_width="match_parent"
+                                android:layout_height="43dp"
+                                android:layout_weight="2"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:divider="@drawable/shape_linearlayout_divider_a"
+                            android:orientation="horizontal"
+                            android:showDividers="middle">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="帶隊官"
+                                android:textColor="@color/colorModeDarkTitle"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spin_nightwork_conductor_actshowworkplan"
+                                android:layout_width="match_parent"
+                                android:layout_height="43dp"
+                                android:layout_weight="2" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:divider="@drawable/shape_linearlayout_divider_a"
+                            android:orientation="horizontal"
+                            android:showDividers="middle">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="車輛"
+                                android:textColor="@color/colorModeDarkTitle"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spin_nightwork_car_actshowworkplan"
+                                android:layout_width="match_parent"
+                                android:layout_height="43dp"
+                                android:layout_weight="2" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_workplan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bgimg_gradual_white75_vertical_mid"
+                        android:orientation="horizontal"
+                        android:weightSum="15">
+
+                        <ImageView
+                            android:id="@+id/iv_workplan_actshowworkplan_a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="7"
+                            android:alpha="50"
+                            android:cropToPadding="true"
+                            android:padding="9dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@mipmap/ic_arrow_down" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="12">
+
+                            <CheckBox
+                                android:id="@+id/chb_workplan_actshowworkplan"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="11"
+                                android:gravity="center" />
+
+                            <Button
+                                android:id="@+id/bt_workplan_actshowworkplan"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_border_c"
+                                android:gravity="left|center_vertical"
+                                android:text="明日預劃"
+                                android:textColor="@color/colorModeDarkTitle"
+                                android:textSize="20sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/textView11"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_workplan_actshowworkplan_b"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="7"
+                            android:alpha="50"
+                            android:cropToPadding="true"
+                            android:padding="9dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@mipmap/ic_arrow_down" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_workplan_actshowworkplan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/shape_border_d"
+                        android:divider="@drawable/shape_linearlayout_divider_a"
+                        android:orientation="vertical"
+                        android:showDividers="middle|beginning|end">
+
+                        <TextView
+                            android:id="@+id/tv_dateday_workplan_actshowworkplan"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:background="@drawable/bgimg_gradual_white75_horizontal_mid"
+                            android:gravity="center"
+                            android:hint="點此選擇日期"
+                            android:textColor="@color/colorModeDarkTitle"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@drawable/shape_linearlayout_divider_a"
+                            android:orientation="horizontal"
+                            android:showDividers="middle">
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="事由"
+                                android:textColor="@color/colorModeDarkTitle"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spinner5"
+                                android:layout_width="match_parent"
+                                android:layout_height="43dp"
+                                android:layout_weight="2" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@drawable/shape_linearlayout_divider_a"
+                            android:orientation="horizontal"
+                            android:showDividers="middle">
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="地點"
+                                android:textColor="@color/colorModeDarkTitle"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spinner4"
+                                android:layout_width="match_parent"
+                                android:layout_height="43dp"
+                                android:layout_weight="2" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@drawable/shape_linearlayout_divider_a"
+                            android:orientation="horizontal"
+                            android:showDividers="middle">
+
+                            <TextView
+                                android:id="@+id/textView14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="車號"
+                                android:textColor="@color/colorModeDarkTitle"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spinner3"
+                                android:layout_width="match_parent"
+                                android:layout_height="43dp"
+                                android:layout_weight="2" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@drawable/shape_linearlayout_divider_a"
+                            android:orientation="horizontal"
+                            android:showDividers="middle">
+
+                            <TextView
+                                android:id="@+id/textView23"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="帶隊官"
+                                android:textColor="@color/colorModeDarkTitle"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spinner2"
+                                android:layout_width="match_parent"
+                                android:layout_height="43dp"
+                                android:layout_weight="2" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@drawable/shape_linearlayout_divider_a"
+                            android:orientation="horizontal"
+                            android:showDividers="middle">
+
+                            <TextView
+                                android:id="@+id/textView22"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="人數"
+                                android:textColor="@color/colorModeDarkTitle"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/editTextNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="43dp"
+                                android:layout_weight="2"
+                                android:ems="10"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_meeting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bgimg_gradual_white75_vertical_mid"
+                        android:orientation="horizontal"
+                        android:weightSum="15">
+
+                        <ImageView
+                            android:id="@+id/iv_meeting_actshowworkplan_a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="7"
+                            android:alpha="50"
+                            android:cropToPadding="true"
+                            android:padding="9dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@mipmap/ic_arrow_down" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="12">
+
+                            <CheckBox
+                                android:id="@+id/chb_meeting_actshowworkplan"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="11"
+                                android:gravity="center" />
+
+                            <Button
+                                android:id="@+id/bt_meeting_actshowworkplan"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_border_c"
+                                android:gravity="left|center_vertical"
+                                android:text="明日會議"
+                                android:textColor="@color/colorModeDarkTitle"
+                                android:textSize="20sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/textView11"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_meeting_actshowworkplan_b"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="7"
+                            android:alpha="50"
+                            android:cropToPadding="true"
+                            android:padding="9dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@mipmap/ic_arrow_down" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_meeting_actshowworkplan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/shape_border_d"
+                        android:divider="@drawable/shape_linearlayout_divider_a"
+                        android:orientation="vertical"
+                        android:showDividers="middle|beginning|end">
+
+                        <TextView
+                            android:id="@+id/tv_dateday_meeting_actshowworkplan"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:background="@drawable/bgimg_gradual_white75_horizontal_mid"
+                            android:gravity="center"
+                            android:hint="點此選擇開會日期"
+                            android:textColor="@color/colorModeDarkTitle"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@drawable/shape_linearlayout_divider_a"
+                            android:orientation="horizontal"
+                            android:showDividers="middle">
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="開會事由"
+                                android:textColor="@color/colorModeDarkTitle"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/editTextTextPersonName3"
+                                android:layout_width="match_parent"
+                                android:layout_height="43dp"
+                                android:layout_weight="2"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@drawable/shape_linearlayout_divider_a"
+                            android:orientation="horizontal"
+                            android:showDividers="middle">
+
+                            <TextView
+                                android:id="@+id/textView19"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="通知單位"
+                                android:textColor="@color/colorModeDarkTitle"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spinner7"
+                                android:layout_width="match_parent"
+                                android:layout_height="43dp"
+                                android:layout_weight="2" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@drawable/shape_linearlayout_divider_a"
+                            android:orientation="horizontal"
+                            android:showDividers="middle">
+
+                            <TextView
+                                android:id="@+id/textView20"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="會議地點"
+                                android:textColor="@color/colorModeDarkTitle"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spinner8"
+                                android:layout_width="match_parent"
+                                android:layout_height="43dp"
+                                android:layout_weight="2" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@drawable/shape_linearlayout_divider_a"
+                            android:orientation="horizontal"
+                            android:showDividers="middle">
+
+                            <TextView
+                                android:id="@+id/textView21"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="與會人員"
+                                android:textColor="@color/colorModeDarkTitle"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spinner9"
+                                android:layout_width="match_parent"
+                                android:layout_height="43dp"
+                                android:layout_weight="2" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_roadimprovement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bgimg_gradual_white75_vertical_mid"
+                        android:orientation="horizontal"
+                        android:weightSum="15">
+
+                        <ImageView
+                            android:id="@+id/iv_roadimprovement_actshowworkplan_a"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="7"
+                            android:alpha="50"
+                            android:cropToPadding="true"
+                            android:padding="9dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@mipmap/ic_arrow_down" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="12">
+
+                            <CheckBox
+                                android:id="@+id/chb_roadimprovement_actshowworkplan"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="11"
+                                android:gravity="center" />
+
+                            <Button
+                                android:id="@+id/bt_roadimprovement_actshowworkplan"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/shape_border_c"
+                                android:gravity="left|center_vertical"
+                                android:text="改善管制"
+                                android:textColor="@color/colorModeDarkTitle"
+                                android:textSize="20sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/textView11"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_roadimprovement_actshowworkplan_b"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="7"
+                            android:alpha="50"
+                            android:cropToPadding="true"
+                            android:padding="9dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@mipmap/ic_arrow_down" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_roadimprovement_actshowworkplan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/shape_border_d"
+                        android:divider="@drawable/shape_linearlayout_divider_a"
+                        android:orientation="vertical"
+                        android:showDividers="middle|beginning|end">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@drawable/shape_linearlayout_divider_a"
+                            android:orientation="horizontal"
+                            android:showDividers="middle">
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="通知單位"
+                                android:textColor="@color/colorModeDarkTitle"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spinner6"
+                                android:layout_width="match_parent"
+                                android:layout_height="43dp"
+                                android:layout_weight="2" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@drawable/shape_linearlayout_divider_a"
+                            android:orientation="horizontal"
+                            android:showDividers="middle">
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="改善路段"
+                                android:textColor="@color/colorModeDarkTitle"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/editTextTextPersonName2"
+                                android:layout_width="match_parent"
+                                android:layout_height="43dp"
+                                android:layout_weight="2"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@drawable/shape_linearlayout_divider_a"
+                            android:orientation="horizontal"
+                            android:showDividers="middle">
+
+                            <TextView
+                                android:id="@+id/textView24"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="改善期限"
+                                android:textColor="@color/colorModeDarkTitle"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tv_dateday_roadimprovement_deadline_actshowworkplan"
+                                android:layout_width="match_parent"
+                                android:layout_height="43dp"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:layout_weight="2"
+                                android:background="@drawable/bgimg_gradual_white75_horizontal_mid"
+                                android:gravity="center"
+                                android:hint="點此選擇改善期限"
+                                android:textColor="@color/colorModeDarkTitle"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@drawable/shape_linearlayout_divider_a"
+                            android:orientation="horizontal"
+                            android:showDividers="middle">
+
+                            <TextView
+                                android:id="@+id/textView25"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="改善原因"
+                                android:textColor="@color/colorModeDarkTitle"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/editTextTextPersonName"
+                                android:layout_width="match_parent"
+                                android:layout_height="43dp"
+                                android:layout_weight="2"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@drawable/shape_linearlayout_divider_a"
+                            android:orientation="horizontal"
+                            android:showDividers="middle">
+
+                            <TextView
+                                android:id="@+id/textView26"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="8"
+                                android:gravity="center_vertical"
+                                android:text="施作日期"
+                                android:textColor="@color/colorModeDarkTitle"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tv_dateday_roadimprovement_actshowworkplan"
+                                android:layout_width="match_parent"
+                                android:layout_height="43dp"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:layout_weight="2"
+                                android:background="@drawable/bgimg_gradual_white75_horizontal_mid"
+                                android:gravity="center"
+                                android:hint="點此選擇改善日期"
+                                android:textColor="@color/colorModeDarkTitle"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_border_d"
+                android:divider="@drawable/shape_linearlayout_divider_a"
+                android:orientation="horizontal"
+                android:showDividers="middle|beginning|end">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:divider="@drawable/shape_linearlayout_divider_a"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_border_d"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="夜間派遣"
+                            android:textColor="@color/colorModeDarkTitle" />
+
+                        <TextView
+                            android:id="@+id/textView29"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_border_d"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView28"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="明日會議"
+                            android:textColor="@color/colorModeDarkTitle" />
+
+                        <TextView
+                            android:id="@+id/textView30"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_border_d"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="改善管制"
+                            android:textColor="@color/colorModeDarkTitle" />
+
+                        <TextView
+                            android:id="@+id/textView31"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_border_d"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="明日預劃"
+                            android:textColor="@color/colorModeDarkTitle" />
+
+                        <TextView
+                            android:id="@+id/textView32"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TextView" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="@drawable/shape_border_d"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#002DFF</color>
+
+    <color name="colorModeDefaultTitle">#646464</color>
+    <color name="colorModeDefaultTitleText">#FFFFFF</color>
+    <color name="colorModeDefaultContent">#FFFFFF</color>
+    <color name="colorModeDefaultText">#000000</color>
+    <color name="colorModeDefaultBgcolor">#66C8C8C8</color>
+
+    <color name="colorModeLightTitle">#E6E6E6</color>
+    <color name="colorModeLightTitleText">#000000</color>
+    <color name="colorModeLightContent">#FFFFFF</color>
+    <color name="colorModeLightText">#FFFFFF</color>
+    <color name="colorModeLightBgcolor">#80505050</color>
+
+    <color name="colorModeDarkTitle">#282828</color>
+    <color name="colorModeDarkTitleText">#969696</color>
+    <color name="colorModeDarkContent">#646464</color>
+    <color name="colorModeDarkText">#FFFFFF</color>
+    <color name="colorModeDarktBgcolor">#80505050</color>
+
+    <color name="colorMdmLockedBgcolor">#00FF00</color>
+    <color name="colorMdmUnLockedBgcolor">#FF0000</color>
+    <color name="colorMdmButtonBgcolor">#99FDFDFE</color>
+
+    <color name="colorMainActivityButtonBgcolor">#33000000</color>
+
+
+</resources>

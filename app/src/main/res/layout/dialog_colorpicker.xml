@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMainActivityButtonBgcolor"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_dialog_colorpicker_show"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            android:background="#FF0000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <SeekBar
+                android:id="@+id/seekBar_dialog_colorpicker_red"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:max="255"
+                android:maxWidth="3dp"
+                android:maxHeight="3dp"
+                android:progress="100"
+                android:progressBackgroundTint="#FF0000"
+                android:progressTint="#FF0000"
+                android:thumbTint="#FF0000" />
+
+            <TextView
+                android:id="@+id/tv_dialog_colorpicker_red_value"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="18"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="100"
+                android:textColor="#FF0000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <SeekBar
+                android:id="@+id/seekBar_dialog_colorpicker_green"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:max="255"
+                android:maxWidth="3dp"
+                android:maxHeight="3dp"
+                android:progress="100"
+                android:progressBackgroundTint="#00FF00"
+                android:progressTint="#00FF00"
+                android:thumbTint="#00FF00" />
+
+            <TextView
+                android:id="@+id/tv_dialog_colorpicker_green_value"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="18"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="100"
+                android:textColor="#00FF00"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <SeekBar
+                android:id="@+id/seekBar_dialog_colorpicker_blue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:max="255"
+                android:maxWidth="3dp"
+                android:maxHeight="3dp"
+                android:progress="100"
+                android:progressBackgroundTint="#0000FF"
+                android:progressTint="#0000FF"
+                android:thumbTint="#0000FF" />
+
+            <TextView
+                android:id="@+id/tv_dialog_colorpicker_blue_value"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="18"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="100"
+                android:textColor="#0000FF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_dialog_colorpicker_submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bgimg_gradual_white75_vertical_mid"
+            android:text="@string/btn_title_done_zh"
+            android:textColor="@color/colorModeDarkTitle" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
